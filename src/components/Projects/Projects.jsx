@@ -4,7 +4,6 @@ import React, { useEffect, useState } from 'react';
 import { HeaderCommon } from '../Layout/HeaderCommon';
 import { FullScreenLoading } from '../Loading/LoadingScreen';
 import SliderLogo from './SliderLogo';
-import { GITHUB_ACCESS_TOKEN } from '../Token';
 
 
 
@@ -18,7 +17,7 @@ export default function Projects() {
   useEffect(() => {
     setIsLoading(true);
     const username = 'phong310';
-    const accessToken = GITHUB_ACCESS_TOKEN;
+    const accessToken = process.env.REACT_APP_GITHUB_ACCESS_TOKEN;
     const apiUrl = `https://api.github.com/users/${username}/repos?access_token=${accessToken}`
 
 
