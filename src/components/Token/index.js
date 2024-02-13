@@ -1,0 +1,3 @@
+const GITHUB_ACCESS_TOKEN = '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';
+
+export { GITHUB_ACCESS_TOKEN }
