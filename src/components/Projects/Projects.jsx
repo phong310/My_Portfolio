@@ -48,7 +48,8 @@ export default function Projects() {
             project.name === "Web-Coffee" ||
             project.name === 'coffee-admin' ||
             project.name === 'Da-web-hrm' ||
-            project.name === 'Da-api-hrm')
+            project.name === 'Da-api-hrm' ||
+            project.name === 'My_Portfolio')
             .map(project => (
               <Card sx={{ ...styleCard }} key={project.id}>
                 <CardMedia
