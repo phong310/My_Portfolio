@@ -1,12 +1,8 @@
-import { useLocation } from 'react-router';
-import SideBar from './components/Layout/sideBar';
+import SideBar from './components/Layout/SideBar';
 
 function App() {
-  const location = useLocation();
   return (
-    <>
       <SideBar />
-    </>
   )
 }
 
