@@ -1,4 +1,3 @@
-import * as React from 'react';
 import ArticleOutlinedIcon from '@mui/icons-material/ArticleOutlined';
 import FolderOpenOutlinedIcon from '@mui/icons-material/FolderOpenOutlined';
 import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
@@ -13,15 +12,16 @@ import ListItem from '@mui/material/ListItem';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
+import { motion } from 'framer-motion';
+import * as React from 'react';
 import { Link, Route, Routes, useLocation } from 'react-router-dom';
 import AboutMe from '../About/AboutMe';
+import Contacts from '../Contacts/Contacts';
 import Home from '../Home/Home';
 import ProfilePic from '../ProfilePic/ProfilePic';
-import Social from '../Social/Social';
 import Projects from '../Projects/Projects';
-import { motion } from 'framer-motion';
 import Resume from '../Resume/Resume';
-import Contacts from '../Contacts/Contacts';
+import Social from '../Social/Social';
 
 const drawerWidth = 200;
 
