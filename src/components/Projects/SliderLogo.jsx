@@ -86,9 +86,8 @@ const SliderLogo = () => {
                 modules={[Autoplay]}
             >
                 {TechPng.map((item, index) => (
-
-                    <SwiperSlide>
-                        <Grid key={index} container spacing={2} sx={{ justifyContent: 'center', bgcolor: '#242424' }}>
+                    <SwiperSlide key={index}>
+                        <Grid  container spacing={2} sx={{ justifyContent: 'center', bgcolor: '#242424' }}>
                             <Grid item xs={2}>
                                 <Tooltip title={item.name} placement="top" arrow>
                                     <img src={item.src} alt={item.name} style={{ width: 50, height: 50 }} />
