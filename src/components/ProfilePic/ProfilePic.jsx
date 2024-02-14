@@ -1,12 +1,12 @@
 import { Grid, Typography } from '@mui/material'
-// import avatarImage from '/dist/assets/images/IMG_0305.jpg';
+import avatarImage from '../../../public/IMG_0305-9QZomn1G.jpg';
 import React from 'react'
 
 export default function ProfilePic() {
   return (
       <Grid sx={{ position: 'relative', }}>
           <Typography sx={{ ...styleName }}>Đình Phong 👨‍💻</Typography>
-          {/* <img src={avatarImage} alt='avatar' style={styleImg} /> */}
+          <img src={avatarImage} alt='avatar' style={styleImg} />
       </Grid>
   )
 }
