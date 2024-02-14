@@ -90,7 +90,7 @@ const SliderLogo = () => {
             >
                 {TechPng.map((item, index) => (
                     <SwiperSlide key={index}>
-                        <Grid  container spacing={2} sx={{ justifyContent: 'center', bgcolor: '#242424' }}>
+                        <Grid container spacing={2} sx={{ ...styleGridContainer }}>
                             <Grid item xs={2}>
                                 <Tooltip title={item.name} placement="top" arrow>
                                     <img src={item.src} alt={item.name} style={{ width: 50, height: 50 }} />
@@ -108,4 +108,9 @@ const SliderLogo = () => {
 };
 
 export default SliderLogo;
+
+const styleGridContainer = {
+    justifyContent:'center',
+    bgcolor:'#242424'
+}
 
