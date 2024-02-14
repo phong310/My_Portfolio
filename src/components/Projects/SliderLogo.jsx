@@ -10,7 +10,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 const SliderLogo = () => {
 
     const imagePath = process.env.REACT_APP_IMAGE_PATH;
-    console.log(imagePath);
 
     const TechPng = [
         {
