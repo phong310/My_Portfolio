@@ -14,67 +14,67 @@ const SliderLogo = () => {
     const TechPng = [
         {
             name: 'React',
-            src: `${imagePath}/pngwing.com.png`
+            src: `/pngwing.com.png`
         },
         {
             name: 'Vue',
-            src: `${imagePath}/vue.png`
+            src: `/vue.png`
         },
         {
             name: 'Laravel',
-            src: `${imagePath}/Laravel.png`
+            src: `/Laravel.png`
         },
         {
             name: 'Node',
-            src: `${imagePath}/nodejs.png`
+            src: `/nodejs.png`
         },
         {
             name: 'ExpressJS',
-            src: `${imagePath}/express.png`
+            src: `/express.png`
         },
         {
             name: 'Material UI',
-            src: `${imagePath}/MUI.png`
+            src: `/MUI.png`
         },
         {
             name: 'Vuetify',
-            src: `${imagePath}/Vuetify.png`
+            src: `/Vuetify.png`
         },
         {
             name: 'Boostrap',
-            src: `${imagePath}/Boostrap.png`
+            src: `/Boostrap.png`
         },
         {
             name: 'Ant design',
-            src: `${imagePath}/Ant.png`
+            src: `/Ant.png`
         },
         {
             name: 'Heroku',
-            src: `${imagePath}/Heroku.png`
+            src: `/Heroku.png`
         },
         {
             name: 'Netlify',
-            src: `${imagePath}/Netlify.png`
+            src: `/Netlify.png`
         },
         {
             name: 'Firebase',
-            src: `${imagePath}/FireBase.png`
+            src: `/FireBase.png`
         },
         {
             name: 'MongoDb',
-            src: `${imagePath}/Mongo.png`
+            src: `/Mongo.png`
         },
         {
             name: 'MySql',
-            src: `${imagePath}/MySQL.png`
+            src: `/MySQL.png`
         },
         {
             name: 'GitLab',
-            src: `${imagePath}/GitLab.png`
+            src: `/GitLab.png`
         },
         {
             name: 'GitHub',
-            src: `${imagePath}/github2.png`
+            src: `/github2.png`
         }
     ]
     return (
