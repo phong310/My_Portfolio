@@ -8,70 +8,73 @@ import { Swiper, SwiperSlide } from "swiper/react";
 
 
 const SliderLogo = () => {
+
+    const imagePath = process.env.REACT_APP_IMAGE_PATH;
+
     const TechPng = [
         {
             name: 'React',
-            src: '/src/assets/images/pngwing.com.png'
+            src: `${imagePath}/pngwing.com.png`
         },
         {
             name: 'Vue',
-            src: '/src/assets/images/vue.png'
+            src: `${imagePath}/vue.png`
         },
         {
             name: 'Laravel',
-            src: '/src/assets/images/Laravel.png'
+            src: `${imagePath}/Laravel.png`
         },
         {
             name: 'Node',
-            src: '/src/assets/images/nodejs.png'
+            src: `${imagePath}/nodejs.png`
         },
         {
             name: 'ExpressJS',
-            src: '/src/assets/images/express.png'
+            src: `${imagePath}/express.png`
         },
         {
             name: 'Material UI',
-            src: '/src/assets/images/MUI.png'
+            src: `${imagePath}/MUI.png`
         },
         {
             name: 'Vuetify',
-            src: '/src/assets/images/Vuetify.png'
+            src: `${imagePath}/Vuetify.png`
         },
         {
             name: 'Boostrap',
-            src: '/src/assets/images/Boostrap.png'
+            src: `${imagePath}/Boostrap.png`
         },
         {
             name: 'Ant design',
-            src: '/src/assets/images/Ant.png'
+            src: `${imagePath}/Ant.png`
         },
         {
             name: 'Heroku',
-            src: '/src/assets/images/Heroku.png'
+            src: `${imagePath}/Heroku.png`
         },
         {
             name: 'Netlify',
-            src: '/src/assets/images/Netlify.png'
+            src: `${imagePath}/Netlify.png`
         },
         {
             name: 'Firebase',
-            src: '/src/assets/images/FireBase.png'
+            src: `${imagePath}/FireBase.png`
         },
         {
             name: 'MongoDb',
-            src: '/src/assets/images/Mongo.png'
+            src: `${imagePath}/Mongo.png`
         },
         {
             name: 'MySql',
-            src: '/src/assets/images/MySQL.png'
+            src: `${imagePath}/MySQL.png`
         },
         {
             name: 'GitLab',
-            src: '/src/assets/images/GitLab.png'
+            src: `${imagePath}/GitLab.png`
         },
         {
             name: 'GitHub',
-            src: '/src/assets/images/github2.png'
+            src: `${imagePath}/github2.png`
         }
     ]
     return (
