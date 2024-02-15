@@ -6,6 +6,22 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import { Swiper, SwiperSlide } from "swiper/react";
 import ReactJpg from '/src/assets/images/pngwing.com.png'
+import VuePng from '/src/assets/images/vue.png'
+import LaravelPng from '/src/assets/images/Laravel.png'
+import NodePng from '/src/assets/images/nodejs.png'
+import ExPng from '/src/assets/images/express.png'
+import MuiPng from '/src/assets/images/MUI.png'
+import VuetifyPng from '/src/assets/images/Vuetify.png'
+import BoostrapPng from '/src/assets/images/Boostrap.png'
+import AntPng from '/src/assets/images/Ant.png'
+import HerokuPng from '/src/assets/images/Heroku.png'
+import NetlifyPng from '/src/assets/images/Netlify.png'
+import FireBasePng from '/src/assets/images/FireBase.png'
+import MongoDbPng from '/src/assets/images/Mongo.png'
+import MysqlPng from '/src/assets/images/MySQL.png'
+import GitLabPng from '/src/assets/images/GitLab.png'
+import GitHubPng from '/src/assets/images/github2.png'
+
 
 
 
@@ -18,63 +34,63 @@ const SliderLogo = () => {
         },
         {
             name: 'Vue',
-            src: `/src/assets/images/vue.png`
+            src: VuePng
         },
         {
             name: 'Laravel',
-            src: `/src/assets/images/Laravel.png`
+            src: LaravelPng
         },
         {
             name: 'Node',
-            src: `/src/assets/images/nodejs.png`
+            src: NodePng
         },
         {
             name: 'ExpressJS',
-            src: `/src/assets/images/express.png`
+            src: ExPng
         },
         {
             name: 'Material UI',
-            src: `/src/assets/images/MUI.png`
+            src: MuiPng
         },
         {
             name: 'Vuetify',
-            src: `/src/assets/images/Vuetify.png`
+            src: VuetifyPng
         },
         {
             name: 'Boostrap',
-            src: `/src/assets/images/Boostrap.png`
+            src: BoostrapPng
         },
         {
             name: 'Ant design',
-            src: `/src/assets/images/Ant.png`
+            src: AntPng
         },
         {
             name: 'Heroku',
-            src: `/src/assets/images/Heroku.png`
+            src: HerokuPng
         },
         {
             name: 'Netlify',
-            src: `/src/assets/images/Netlify.png`
+            src: NetlifyPng
         },
         {
             name: 'Firebase',
-            src: `/src/assets/images/FireBase.png`
+            src: FireBasePng
         },
         {
             name: 'MongoDb',
-            src: `/src/assets/images/Mongo.png`
+            src: MongoDbPng
         },
         {
             name: 'MySql',
-            src: `/src/assets/images/MySQL.png`
+            src: MysqlPng
         },
         {
             name: 'GitLab',
-            src: `/src/assets/images/GitLab.png`
+            src: GitLabPng
         },
         {
             name: 'GitHub',
-            src: `/src/assets/images/github2.png`
+            src: GitHubPng
         }
     ]
     return (
