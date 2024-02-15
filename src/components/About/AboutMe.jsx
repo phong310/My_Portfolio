@@ -8,13 +8,12 @@ import RemoveRedEyeOutlinedIcon from '@mui/icons-material/RemoveRedEyeOutlined';
 import DevicesOutlinedIcon from '@mui/icons-material/DevicesOutlined';
 import CameraAltOutlinedIcon from '@mui/icons-material/CameraAltOutlined';
 import { motion } from 'framer-motion';
+import cvFilePath from '/src/assets/CV_PhamDinhPhong.pdf'
 
 export default function AboutMe() {
   const [contentPage, setContentPage] = useState(null)
 
   const handleDownloadCV = () => {
-    const cvFilePath = 'src/assets/CV_PhamDinhPhong.pdf';
-
     saveAs(cvFilePath, 'CV_PhamDinhPhong.pdf');
   };
 
