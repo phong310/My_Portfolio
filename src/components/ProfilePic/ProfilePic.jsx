@@ -1,5 +1,5 @@
 import { Grid, Typography } from '@mui/material'
-import avatarImage from '../../../public/IMG_0305-9QZomn1G.jpg';
+import avatarImage from '/src/assets/images/IMG_0305.jpg';
 import React from 'react'
 
 export default function ProfilePic() {
