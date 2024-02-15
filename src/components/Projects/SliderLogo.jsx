@@ -5,17 +5,16 @@ import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 import { Swiper, SwiperSlide } from "swiper/react";
+import ReactJpg from '/src/assets/images/pngwing.com.png'
 
 
 
 const SliderLogo = () => {
 
-    // const imagePath = process.env.REACT_APP_IMAGE_PATH;
-
     const TechPng = [
         {
             name: 'React',
-            src: `/src/assets/images/pngwing.com.png`
+            src:  ReactJpg 
         },
         {
             name: 'Vue',
