@@ -6,8 +6,6 @@ import { FullScreenLoading } from '../Loading/LoadingScreen';
 import SliderLogo from './SliderLogo';
 
 
-
-
 export default function Projects() {
   const [projects, setProjects] = useState([]);
   const [contentPage, setContentPage] = useState(null)
