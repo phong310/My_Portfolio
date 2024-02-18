@@ -1,9 +1,16 @@
 import { Divider, Grid, Typography } from '@mui/material'
+import { useMediaQuery, useTheme } from '@mui/material';
 import React from 'react'
 
 export const HeaderCommon = ({ title, icon: IconComponent, content }) => {
+    const theme = useTheme()
+    const sm = useMediaQuery(theme.breakpoints.up('sm'))
+    const md = useMediaQuery(theme.breakpoints.up('md'))
+    const lg = useMediaQuery(theme.breakpoints.up('lg'))
+
+
     return (
-        <Grid sx={{ ...gridContainer }}>
+        <Grid sx={{ ...gridContainer, padding: lg ? '0 200px' : md ? '0 100px' : sm ? '0 50px' : '0 20px' }}>
             <Grid sx={{ ...styleWrappe }}>
                 <Typography sx={{ ...styleTitle }}>{title}</Typography>
                 {IconComponent && <IconComponent sx={{ ...styleIcon }} />}
@@ -15,8 +22,8 @@ export const HeaderCommon = ({ title, icon: IconComponent, content }) => {
 }
 
 const gridContainer = {
-    padding: '0 260px',
     my: 5,
+    mt: 8
 }
 
 const styleTitle = {
@@ -40,7 +47,7 @@ const styleWrappe = {
 }
 
 const styleDashed = {
-    borderStyle: 'dashed', 
-    borderWidth: '1px', 
+    borderStyle: 'dashed',
+    borderWidth: '1px',
     borderColor: '#777777'
 }

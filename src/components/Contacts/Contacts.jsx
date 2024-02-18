@@ -5,11 +5,18 @@ import MailOutlinedIcon from '@mui/icons-material/MailOutlined';
 import SendOutlinedIcon from '@mui/icons-material/SendOutlined';
 import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
 import PhoneOutlinedIcon from '@mui/icons-material/PhoneOutlined';
+import { useMediaQuery, useTheme } from '@mui/material';
 import { motion } from 'framer-motion';
 
 
 export default function Contacts() {
     const [contentPage, setContentPage] = useState(null);
+    const theme = useTheme()
+    const sm = useMediaQuery(theme.breakpoints.up('sm'))
+    const md = useMediaQuery(theme.breakpoints.up('md'))
+    const lg = useMediaQuery(theme.breakpoints.up('lg'))
+    const xl = useMediaQuery(theme.breakpoints.up('xl'))
+    const minWidth = sm ? 200 : (md ? 300 : (xl ? 400 : 500));
 
     useEffect(() => {
         setContentPage(
@@ -17,28 +24,28 @@ export default function Contacts() {
                 <Grid container sx={{ ...styleTitle }}>
                     <h1 style={{ borderBottom: '2px solid #00A3E1' }}>Let's Talk</h1>
                 </Grid>
-                <Grid container sx={{ ...styleGridContainer }} spacing={2}>
-                    <Grid item >
-                        <TextField label="Name" InputProps={{
-                            style: { width: 400, color: "#E1E1E1" },
+                <Grid container sx={{ ...styleGridContainer }} spacing={3}>
+                    <Grid item xs={12} sm={12} md={5} lg={4}>
+                        <TextField fullWidth label="Name" InputProps={{
+                            style: { color: "#E1E1E1" },
                         }} sx={{ ...styleTextField }} />
                     </Grid>
-                    <Grid item >
-                        <TextField label="Email" InputProps={{
-                            style: { width: 400, color: "#E1E1E1" },
+                    <Grid item xs={12} sm={12} md={5} lg={4}>
+                        <TextField fullWidth label="Email" InputProps={{
+                            style: { color: "#E1E1E1" },
                         }} sx={{ ...styleTextField }} />
                     </Grid>
-                    <Grid item sx={{ mt: 2 }}>
-                        <TextField label="How can we help you?" InputProps={{
-                            style: { width: 820, color: "#E1E1E1", height: 240, },
+                    <Grid item xs={12} md={10} lg={8}>
+                        <TextField fullWidth label="How can we help you?" InputProps={{
+                            style: { color: "#E1E1E1", height: 200,},
                         }} sx={{ ...styleTextField }} />
                     </Grid>
                     <Grid item xs={12} sx={{textAlign:'center', mt:2}}>
                         <Button variant="outlined" sx={{ height: 40, color: '#00A3E1' }}>Send message</Button>
                     </Grid>
                 </Grid>
-                <Grid container sx={{ ...styleServiceContente }}>
-                    <Grid item xs={2} sx={{ ...styleModule }}>
+                <Grid container sx={{ ...styleServiceContente }} spacing={3}>
+                    <Grid item xs={12} sm={12} md={2} sx={{ ...styleModule }}>
                         <motion.div
                             whileHover={{ scale: 2 }}
                             whileTap={{ scale: 0.9 }}
@@ -47,7 +54,7 @@ export default function Contacts() {
                         </motion.div>
                         <Typography sx={{ ...styleServiceTitle }}>phamdinhphong12@gmail.com</Typography>
                     </Grid>
-                    <Grid item xs={2} sx={{ ...styleModule }}>
+                    <Grid item xs={12} sm={12} md={2} sx={{ ...styleModule }}>
                         <motion.div
                             whileHover={{ scale: 2 }}
                             whileTap={{ scale: 0.9 }}
@@ -56,7 +63,7 @@ export default function Contacts() {
                         </motion.div>
                         <Typography sx={{ ...styleServiceTitle }}>218 Lac Long Quan, HN</Typography>
                     </Grid>
-                    <Grid item xs={2} sx={{ ...styleModule }}>
+                    <Grid item xs={12} sm={12} md={2} sx={{ ...styleModule }}>
                         <motion.div
                             whileHover={{ scale: 2 }}
                             whileTap={{ scale: 0.9 }}
@@ -86,7 +93,9 @@ const styleTitle = {
 const styleGridContainer = {
     justifyContent: "center",
     alignItems: "center",
-    mt: 2
+    alignContent:'center',
+    textAlign:'center',
+    mt: 2,
 }
 
 const styleTextField = {

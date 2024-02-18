@@ -89,7 +89,7 @@ export default function Resume() {
                     </Grid>
                 </Grid>
                 <Grid container spacing={2} sx={{ ...gridProgressBar }}>
-                    <Grid item xs={6} sx={{ ...styleContentProgressBar }}>
+                    <Grid item lg={12} xl={6} sx={{ ...styleContentProgressBar }}>
                         <Grid container sx={{ ...styleBodyTitle }}>
                             <h1 style={{ ...styleH1Text }}>DESIGN SKILLS</h1>
                         </Grid>
@@ -108,7 +108,7 @@ export default function Resume() {
                             </Grid>
                         </Grid>
                     </Grid>
-                    <Grid item xs={6} sx={{ ...styleContentProgressBar }}>
+                    <Grid item lg={12} xl={6} sx={{ ...styleContentProgressBar }}>
                         <Grid container sx={{ ...styleBodyTitle }}>
                             <h1 style={{ ...styleH1Text }}>CODING SKILLS</h1>
                         </Grid>
@@ -169,9 +169,9 @@ const styleGridTimeLine = {
 }
 
 const gridProgressBar = {
-    justifyContent: "space-between",
+    justifyContent: "center",
     textAlign: 'center',
-    alignItems: 'center'
+    alignItems: 'center',
 }
 
 const styleContentProgressBar = {
