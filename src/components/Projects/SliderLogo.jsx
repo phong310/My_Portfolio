@@ -94,7 +94,7 @@ const SliderLogo = () => {
         }
     ]
     return (
-        <div style={{ maxWidth: 800 }}>
+        <Grid style={{ maxWidth: 800 }}>
             <Swiper
                 slidesPerView={6}
                 className="mySwiper"
@@ -117,7 +117,7 @@ const SliderLogo = () => {
                 ))}
             </Swiper>
 
-        </div>
+        </Grid>
 
 
     );

@@ -21,19 +21,19 @@ export default function AboutMe() {
     setContentPage(
       <>
         <Grid container spacing={6} sx={{ ...titleHead }}>
-          <Grid item xs={8}>
+          <Grid item md={12} lg={8}>
             <h1>Web Developer & Designer</h1>
             <Typography sx={{ ...styleText }}>
               Welcome to my portfolio page! I am Phong, a young programmer with a strong passion for technology and web development. At the age of 23, I just graduated from university majoring in Software Technology, where I refined and developed in-depth skills in the field of web development, especially Frontend, but I also have the ability to program. Significant backend, with proficiency in Node.js and PHP framework Laravel. <br /> <br />
               In addition to my professional skills, I am known as a cheerful, sociable person with a high spirit of learning. I am always curious and eager to constantly improve my knowledge, setting new challenges to develop my creativity and professional skills.
             </Typography>
-            <Box sx={{ mt:3}}>
+            <Box sx={{ mt: 3 }}>
               <img src='https://watson-vcard.netlify.app/img/signature-white.png' />
             </Box>
           </Grid>
-          <Grid item xs={4}>
+          <Grid item md={12} lg={4}>
             <h1>Personal Information</h1>
-            <Grid >
+            <Grid>
               <Grid container spacing={1} sx={{ mb: 1 }}>
                 <Grid item>
                   <Typography sx={{ ...styleTitle }}>Name:</Typography>
@@ -96,11 +96,11 @@ export default function AboutMe() {
             </Grid>
           </Grid>
         </Grid>
-        <Grid container sx={{ ...styleService }}>
+        <Grid container sx={{ ...styleService, mt:4 }}>
           <h1 style={{ borderBottom: '2px solid #00A3E1' }}>Services</h1>
         </Grid>
-        <Grid container sx={{ ...styleServiceContente }}>
-          <Grid item xs={2} sx={{ ...styleModule }}>
+        <Grid container sx={{ ...styleServiceContente }} spacing={4}>
+          <Grid item xs={12} md={6} lg={2} sx={{ ...styleModule }}>
             <motion.div
               whileHover={{ scale: 2 }}
               whileTap={{ scale: 0.9 }}
@@ -108,9 +108,9 @@ export default function AboutMe() {
               <LaptopOutlinedIcon sx={{ ...styleIcon }} />
             </motion.div>
             <Typography sx={{ ...styleServiceTitle }}>Web Development</Typography>
-            <Typography sx={{...styleDescript }}>Amet aspernatur delectus maxime ducimus similique Ratione asperiores corporis provident aut libero</Typography>
+            <Typography sx={{ ...styleDescript }}>Amet aspernatur delectus maxime ducimus similique Ratione asperiores corporis provident aut libero</Typography>
           </Grid>
-          <Grid item xs={2} sx={{ ...styleModule }}>
+          <Grid item xs={12} md={6} lg={2} sx={{ ...styleModule }}>
             <motion.div
               whileHover={{ scale: 2 }}
               whileTap={{ scale: 0.9 }}
@@ -120,7 +120,7 @@ export default function AboutMe() {
             <Typography sx={{ ...styleServiceTitle }}>Web Design</Typography>
             <Typography sx={{ ...styleDescript }}>Amet aspernatur delectus maxime ducimus similique Ratione asperiores corporis provident aut libero</Typography>
           </Grid>
-          <Grid item xs={2} sx={{ ...styleModule }}>
+          <Grid item xs={12} md={6} lg={2} sx={{ ...styleModule }}>
             <motion.div
               whileHover={{ scale: 2 }}
               whileTap={{ scale: 0.9 }}
@@ -130,7 +130,7 @@ export default function AboutMe() {
             <Typography sx={{ ...styleServiceTitle }}>Responesive Design</Typography>
             <Typography sx={{ ...styleDescript }}>Amet aspernatur delectus maxime ducimus similique Ratione asperiores corporis provident aut libero</Typography>
           </Grid>
-          <Grid item xs={2} sx={{ ...styleModule }}>
+          <Grid item xs={12} md={6} lg={2} sx={{ ...styleModule }}>
             <motion.div
               whileHover={{ scale: 2 }}
               whileTap={{ scale: 0.9 }}
@@ -188,6 +188,7 @@ const styleServiceContente = {
 
 const styleModule = {
   textAlign: 'center'
+
 }
 
 const styleIcon = {
