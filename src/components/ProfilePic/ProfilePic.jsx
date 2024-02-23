@@ -16,7 +16,7 @@ export default function ProfilePic() {
                 aria-labelledby="transition-modal-title"
                 aria-describedby="transition-modal-description"
                 open={openPreviewImg}
-                onClose={()=>setOpenPreviewImg(false)}
+                onClose={() => setOpenPreviewImg(false)}
                 closeAfterTransition
                 slots={{ backdrop: Backdrop }}
                 slotProps={{
@@ -31,6 +31,7 @@ export default function ProfilePic() {
                         alt="preview"
                         style={style}
                     />
+                        
                 </Fade>
             </Modal>
         </>
@@ -69,6 +70,8 @@ const style = {
     top: '50%',
     left: '50%',
     transform: 'translate(-50%, -50%)',
-    width: '30%',
+    width: '80%', 
+    maxWidth: 600,
+    height: 'auto',
     bgcolor: 'background.paper',
 };
