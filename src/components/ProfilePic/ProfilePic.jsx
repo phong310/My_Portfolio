@@ -1,20 +1,48 @@
-import { Grid, Typography } from '@mui/material'
+import { Grid, Typography, Modal, Fade, Box, Backdrop } from '@mui/material'
 import avatarImage from '/src/assets/images/IMG_0305.jpg';
-import React from 'react'
+import React, { useState } from 'react'
 
 export default function ProfilePic() {
-  return (
-      <Grid sx={{ position: 'relative', }}>
-          <Typography sx={{ ...styleName }}>Đình Phong 👨‍💻</Typography>
-          <img src={avatarImage} alt='avatar' style={styleImg} />
-      </Grid>
-  )
+
+    const [openPreviewImg, setOpenPreviewImg] = useState(false)
+
+    return (
+        <>
+            <Grid sx={{ position: 'relative', }}>
+                <Typography sx={{ ...styleName }}>Đình Phong 👨‍💻</Typography>
+                <img src={avatarImage} alt='avatar' style={styleImg} onClick={(e) => setOpenPreviewImg(true)} />
+            </Grid>
+            <Modal
+                aria-labelledby="transition-modal-title"
+                aria-describedby="transition-modal-description"
+                open={openPreviewImg}
+                onClose={()=>setOpenPreviewImg(false)}
+                closeAfterTransition
+                slots={{ backdrop: Backdrop }}
+                slotProps={{
+                    backdrop: {
+                        timeout: 500,
+                    },
+                }}
+            >
+                <Fade in={openPreviewImg}>
+                    <img
+                        src={avatarImage}
+                        alt="preview"
+                        style={style}
+                    />
+                </Fade>
+            </Modal>
+        </>
+
+    )
 }
 
 const styleImg = {
     height: "auto",
     position: 'relative',
-    width: '100%'
+    width: '100%',
+    cursor: 'pointer'
 }
 
 const styleName = {
@@ -33,5 +61,14 @@ const styleName = {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'center',
-    fontFamily: 'Playfair Display'
+    fontFamily: 'Playfair Display',
 }
+
+const style = {
+    position: 'absolute',
+    top: '50%',
+    left: '50%',
+    transform: 'translate(-50%, -50%)',
+    width: '30%',
+    bgcolor: 'background.paper',
+};
