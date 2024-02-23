@@ -44,7 +44,6 @@ export default function AnimatedLinearProgress({ progress }) {
                     style={{
                         height: 8,
                         borderRadius: 1,
-                        width: 400,
                         backgroundColor: 'white',
                         position: 'relative',
                         overflow: 'hidden',
@@ -55,6 +54,8 @@ export default function AnimatedLinearProgress({ progress }) {
                             backgroundColor: '#00A3E1',
                             animation: 'progressAnimation 1s ease-in-out forwards',
                         },
+                        width: { xs: 140, sm:300, md:400, lg: 400 },
+
                     }}
                 />
             </Grid>
@@ -70,6 +71,6 @@ export default function AnimatedLinearProgress({ progress }) {
 }
 
 const styleTypo = {
-    fontSize: 16, 
+    fontSize: 18, 
     fontWeight: 'bold'
 }

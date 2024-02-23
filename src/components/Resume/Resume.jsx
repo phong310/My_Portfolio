@@ -11,6 +11,17 @@ import TimelineContent from '@mui/lab/TimelineContent';
 import TimelineDot from '@mui/lab/TimelineDot'
 import TimelineOppositeContent from '@mui/lab/TimelineOppositeContent';
 import AnimatedLinearProgress from './AnimatedLinearProgress';
+import HtmlPng from '/src/assets/images/html.png'
+import Css3Png from '/src/assets/images/css3.png'
+import JsPng from '/src/assets/images/js.png'
+import ReactJpg from '/src/assets/images/pngwing.com.png'
+import LaravelPng from '/src/assets/images/Laravel.png'
+import VuePng from '/src/assets/images/vue.png'
+import NuxtPng from '/src/assets/images/nuxtjs.png'
+import PsPng from '/src/assets/images/ps.png'
+import CoralDrawPng from '/src/assets/images/Coraldraw.png'
+import AiPng from '/src/assets/images/ai.png'
+import NodePng from '/src/assets/images/nodejs.png'
 
 
 export default function Resume() {
@@ -91,43 +102,80 @@ export default function Resume() {
                 <Grid container spacing={2} sx={{ ...gridProgressBar }}>
                     <Grid item lg={12} xl={6} sx={{ ...styleContentProgressBar }}>
                         <Grid container sx={{ ...styleBodyTitle }}>
-                            <h1 style={{ ...styleH1Text }}>DESIGN SKILLS</h1>
+                            <h1 style={{ ...styleH1Text }}>CODING SKILLS</h1>
                         </Grid>
                         <Grid sx={{ margin: '0 auto' }}>
-                            <Grid sx={{ mb: 2 }}>
-                                <Typography sx={{ ...styleTextProgress }}>CORAL DRAW</Typography>
+                            <Grid sx={{ ...styleGridIcon }}>
+                                {/* <Typography sx={{ ...styleTextProgress }}>HTML5</Typography> */}
+                                <img src={HtmlPng} style={styleLogoPng} />
+                                <AnimatedLinearProgress progress={90} />
+                            </Grid>
+                            <Grid sx={{ ...styleGridIcon }}>
+                                {/* <Typography sx={{ ...styleTextProgress }}>CSS3</Typography> */}
+                                <img src={Css3Png} style={styleLogoPng} />
+                                <AnimatedLinearProgress progress={85} />
+                            </Grid>
+                            <Grid sx={{ ...styleGridIcon }}>
+                                {/* <Typography sx={{ ...styleTextProgress }}>JAVASCRIPT</Typography> */}
+                                <img src={JsPng} style={styleLogoPng}/>
+                                <AnimatedLinearProgress progress={92} />
+                            </Grid>
+                            <Grid sx={{ ...styleGridIcon }}>
+                                {/* <Typography sx={{ ...styleTextProgress }}>JAVASCRIPT</Typography> */}
+                                <img src={NodePng} style={styleLogoPng}/>
+                                <AnimatedLinearProgress progress={70} />
+                            </Grid>
+                        </Grid>
+                    </Grid>
+                    <Grid item lg={12} xl={6} sx={{ ...styleContentProgressBar, my: 4 }}>
+                        <Grid container sx={{ ...styleBodyTitle }}>
+                            <h1 style={{ ...styleH1Text }}>FRAMEWORKS SKILLS</h1>
+                        </Grid>
+                        <Grid sx={{ margin: '0 auto' }}>
+                            <Grid sx={{ ...styleGridIcon }}>
+                                {/* <Typography sx={{ ...styleTextProgress }}>React JS/TS</Typography> */}
+                                <img src={ReactJpg} style={styleLogoPng} />
+                                <AnimatedLinearProgress progress={90} />
+                            </Grid>
+                            <Grid sx={{ ...styleGridIcon }}>
+                                {/* <Typography sx={{ ...styleTextProgress }}>Laravel</Typography> */}
+                                <img src={LaravelPng} style={styleLogoPng} />
+                                <AnimatedLinearProgress progress={70} />
+                            </Grid>
+                            <Grid sx={{ ...styleGridIcon }}>
+                                {/* <Typography sx={{ ...styleTextProgress }}>Vue JS</Typography> */}
+                                <img src={VuePng} style={styleLogoPng} />
+                                <AnimatedLinearProgress progress={70} />
+                            </Grid>
+                            <Grid sx={{ ...styleGridIcon }}>
+                                {/* <Typography sx={{ ...styleTextProgress }}>Nuxt JS</Typography> */}
+                                <img src={NuxtPng} style={styleLogoPng} />
                                 <AnimatedLinearProgress progress={50} />
-                            </Grid>
-                            <Grid sx={{ mb: 2 }}>
-                                <Typography sx={{ ...styleTextProgress }}>PHOTOSHOP</Typography>
-                                <AnimatedLinearProgress progress={82} />
-                            </Grid>
-                            <Grid sx={{ mb: 2 }}>
-                                <Typography sx={{ ...styleTextProgress }}>ILLUSTRATOR</Typography>
-                                <AnimatedLinearProgress progress={94} />
                             </Grid>
                         </Grid>
                     </Grid>
                     <Grid item lg={12} xl={6} sx={{ ...styleContentProgressBar }}>
                         <Grid container sx={{ ...styleBodyTitle }}>
-                            <h1 style={{ ...styleH1Text }}>CODING SKILLS</h1>
+                            <h1 style={{ ...styleH1Text }}>DESIGN SKILLS</h1>
                         </Grid>
                         <Grid sx={{ margin: '0 auto' }}>
-                            <Grid sx={{ mb: 2 }}>
-                                <Typography sx={{ ...styleTextProgress }}>HTML5</Typography>
-                                <AnimatedLinearProgress progress={90} />
+                            <Grid sx={{ ...styleGridIcon }}>
+                                {/* <Typography sx={{ ...styleTextProgress }}>CORAL DRAW</Typography> */}
+                                <img src={CoralDrawPng} style={styleLogoPng} />
+                                <AnimatedLinearProgress progress={50} />
                             </Grid>
-                            <Grid sx={{ mb: 2 }}>
-                                <Typography sx={{ ...styleTextProgress }}>CSS3</Typography>
-                                <AnimatedLinearProgress progress={85} />
+                            <Grid sx={{ ...styleGridIcon }}>
+                                {/* <Typography sx={{ ...styleTextProgress }}>PHOTOSHOP</Typography> */}
+                                <img src={PsPng} style={styleLogoPng} />
+                                <AnimatedLinearProgress progress={70} />
                             </Grid>
-                            <Grid sx={{ mb: 2 }}>
-                                <Typography sx={{ ...styleTextProgress }}>JAVASCRIPT</Typography>
-                                <AnimatedLinearProgress progress={92} />
+                            <Grid sx={{ ...styleGridIcon }}>
+                                {/* <Typography sx={{ ...styleTextProgress }}>ILLUSTRATOR</Typography> */}
+                                <img src={AiPng} style={styleLogoPng}/>
+                                <AnimatedLinearProgress progress={70} />
                             </Grid>
                         </Grid>
                     </Grid>
-
                 </Grid>
             </>
 
@@ -190,4 +238,17 @@ const styleTextProgress = {
     fontFamily: 'Playfair Display',
     textAlign: "left",
     fontSize: 18
+}
+
+const styleGridIcon = {
+    mb: 3, 
+    display: 'flex', 
+    gap: 1, 
+    alignItems: 'center',
+    alignContents:'center'
+}
+
+const styleLogoPng = {
+    width: 50,
+    height: 50 
 }

@@ -21,6 +21,7 @@ import MongoDbPng from '/src/assets/images/Mongo.png'
 import MysqlPng from '/src/assets/images/MySQL.png'
 import GitLabPng from '/src/assets/images/GitLab.png'
 import GitHubPng from '/src/assets/images/github2.png'
+import NuxtPng from '/src/assets/images/nuxtjs.png'
 
 
 
@@ -91,6 +92,10 @@ const SliderLogo = () => {
         {
             name: 'GitHub',
             src: GitHubPng
+        },
+        {
+            name: 'NuxtJs',
+            src: NuxtPng
         }
     ]
     return (
