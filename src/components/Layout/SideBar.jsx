@@ -42,16 +42,16 @@ const sideBarMenu = [
         component: <AboutMe />,
     },
     {
-        label: 'Projects',
-        path: '/projects',
-        Icon: <FolderOpenOutlinedIcon />,
-        component: <Projects />,
-    },
-    {
         label: 'Resume',
         path: '/resume',
         Icon: <ArticleOutlinedIcon />,
         component: <Resume />
+    },
+    {
+        label: 'Projects',
+        path: '/projects',
+        Icon: <FolderOpenOutlinedIcon />,
+        component: <Projects />,
     },
     {
         label: 'Contact',
