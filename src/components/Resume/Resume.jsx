@@ -19,7 +19,7 @@ import LaravelPng from '/src/assets/images/Laravel.png'
 import VuePng from '/src/assets/images/vue.png'
 import NuxtPng from '/src/assets/images/nuxtjs.png'
 import PsPng from '/src/assets/images/ps.png'
-import CoralDrawPng from '/src/assets/images/Coraldraw.png'
+import CoralDrawPng from '/src/assets/images/coraldraw.png'
 import AiPng from '/src/assets/images/ai.png'
 import NodePng from '/src/assets/images/nodejs.png'
 
