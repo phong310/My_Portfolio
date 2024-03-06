@@ -36,8 +36,8 @@ export default function Contacts() {
                         }} sx={{ ...styleTextField }} />
                     </Grid>
                     <Grid item xs={12} md={10} lg={8}>
-                        <TextField fullWidth label="How can we help you?" InputProps={{
-                            style: { color: "#E1E1E1", height: 200,},
+                        <TextField multiline rows={8} maxRows={8} fullWidth label="How can we help you?" InputProps={{
+                            style: { color: "#E1E1E1",},
                         }} sx={{ ...styleTextField }} />
                     </Grid>
                     <Grid item xs={12} sx={{textAlign:'center', mt:2}}>
