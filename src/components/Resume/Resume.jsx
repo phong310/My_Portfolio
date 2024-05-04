@@ -85,7 +85,7 @@ export default function Resume() {
                                     <TimelineDot />
                                     <TimelineConnector />
                                 </TimelineSeparator>
-                                <TimelineContent sx={{ mb: 2, ...styleContent }}>Worked at Solashi company for 6 months (participated in building an HRM employee management project)</TimelineContent>
+                                <TimelineContent sx={{ mb: 2, ...styleContent }}>Worked at Solashi company for 1 years (participated in building an HRM employee management project)</TimelineContent>
                             </TimelineItem>
                             <TimelineItem>
                                 <TimelineOppositeContent sx={{ ...styleYear }}>
