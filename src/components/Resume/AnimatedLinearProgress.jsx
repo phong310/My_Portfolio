@@ -54,7 +54,7 @@ export default function AnimatedLinearProgress({ progress }) {
                             backgroundColor: '#00A3E1',
                             animation: 'progressAnimation 1s ease-in-out forwards',
                         },
-                        width: { xs: 140, sm:300, md:400, lg: 400 },
+                        width: { xs: 140, sm:300,md:400, lg: 400 },
 
                     }}
                 />
