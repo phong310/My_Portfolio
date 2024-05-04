@@ -8,7 +8,7 @@ import SliderLogo from './SliderLogo';
 export default function Projects() {
   const [projects, setProjects] = useState([]);
   const [contentPage, setContentPage] = useState(null);
-  const [isLoading, setIsLoading] = useState(false);
+  const [isLoading, setIsLoading] = useState(false)
 
   useEffect(() => {
     setIsLoading(true);
