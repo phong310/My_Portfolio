@@ -8,13 +8,13 @@ import RemoveRedEyeOutlinedIcon from '@mui/icons-material/RemoveRedEyeOutlined';
 import DevicesOutlinedIcon from '@mui/icons-material/DevicesOutlined';
 import CameraAltOutlinedIcon from '@mui/icons-material/CameraAltOutlined';
 import { motion } from 'framer-motion';
-import cvFilePath from '/src/assets/CV_PhamDinhPhong.pdf'
+import cvFilePath from '/src/assets/CV_PhamDinhPhong_(en).pdf'
 
 export default function AboutMe() {
   const [contentPage, setContentPage] = useState(null)
 
   const handleDownloadCV = () => {
-    saveAs(cvFilePath, 'CV_PhamDinhPhong.pdf');
+    saveAs(cvFilePath, 'CV_PhamDinhPhong_(en).pdf');
   };
 
   useEffect(() => {
@@ -96,7 +96,7 @@ export default function AboutMe() {
             </Grid>
           </Grid>
         </Grid>
-        <Grid container sx={{ ...styleService, mt:4 }}>
+        <Grid container sx={{ ...styleService, mt: 4 }}>
           <h1 style={{ borderBottom: '2px solid #00A3E1' }}>Services</h1>
         </Grid>
         <Grid container sx={{ ...styleServiceContente }} spacing={4}>

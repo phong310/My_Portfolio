@@ -20,6 +20,7 @@ import VuePng from '/src/assets/images/vue.png'
 import NuxtPng from '/src/assets/images/nuxtjs.png'
 import PsPng from '/src/assets/images/ps.png'
 import CoralDrawPng from '/src/assets/images/coraldraw.png'
+import FigmaPng from '/src/assets/images/figma.png'
 import AiPng from '/src/assets/images/ai.png'
 import NodePng from '/src/assets/images/nodejs.png'
 
@@ -161,8 +162,8 @@ export default function Resume() {
                         <Grid sx={{ margin: '0 auto' }}>
                             <Grid sx={{ ...styleGridIcon }}>
                                 {/* <Typography sx={{ ...styleTextProgress }}>CORAL DRAW</Typography> */}
-                                <img src={CoralDrawPng} style={styleLogoPng} />
-                                <AnimatedLinearProgress progress={50} />
+                                <img src={FigmaPng} style={styleLogoPng} />
+                                <AnimatedLinearProgress progress={70} />
                             </Grid>
                             <Grid sx={{ ...styleGridIcon }}>
                                 {/* <Typography sx={{ ...styleTextProgress }}>PHOTOSHOP</Typography> */}
