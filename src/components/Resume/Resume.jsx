@@ -23,6 +23,8 @@ import CoralDrawPng from '/src/assets/images/coraldraw.png'
 import FigmaPng from '/src/assets/images/figma.png'
 import AiPng from '/src/assets/images/ai.png'
 import NodePng from '/src/assets/images/nodejs.png'
+import typescript from '/src/assets/images/typescript.png'
+import nextjsPng from '/src/assets/images/nextjs-icon.png'
 
 
 export default function Resume() {
@@ -109,17 +111,22 @@ export default function Resume() {
                             <Grid sx={{ ...styleGridIcon }}>
                                 {/* <Typography sx={{ ...styleTextProgress }}>HTML5</Typography> */}
                                 <img src={HtmlPng} style={styleLogoPng} />
-                                <AnimatedLinearProgress progress={90} />
+                                <AnimatedLinearProgress progress={100} />
                             </Grid>
                             <Grid sx={{ ...styleGridIcon }}>
                                 {/* <Typography sx={{ ...styleTextProgress }}>CSS3</Typography> */}
                                 <img src={Css3Png} style={styleLogoPng} />
-                                <AnimatedLinearProgress progress={85} />
+                                <AnimatedLinearProgress progress={100} />
                             </Grid>
                             <Grid sx={{ ...styleGridIcon }}>
                                 {/* <Typography sx={{ ...styleTextProgress }}>JAVASCRIPT</Typography> */}
                                 <img src={JsPng} style={styleLogoPng}/>
-                                <AnimatedLinearProgress progress={92} />
+                                <AnimatedLinearProgress progress={100} />
+                            </Grid>
+                            <Grid sx={{ ...styleGridIcon }}>
+                                {/* <Typography sx={{ ...styleTextProgress }}>JAVASCRIPT</Typography> */}
+                                <img src={typescript} style={styleLogoPng}/>
+                                <AnimatedLinearProgress progress={95} />
                             </Grid>
                             <Grid sx={{ ...styleGridIcon }}>
                                 {/* <Typography sx={{ ...styleTextProgress }}>JAVASCRIPT</Typography> */}
@@ -136,6 +143,11 @@ export default function Resume() {
                             <Grid sx={{ ...styleGridIcon }}>
                                 {/* <Typography sx={{ ...styleTextProgress }}>React JS/TS</Typography> */}
                                 <img src={ReactJpg} style={styleLogoPng} />
+                                <AnimatedLinearProgress progress={100} />
+                            </Grid>
+                            <Grid sx={{ ...styleGridIcon }}>
+                                {/* <Typography sx={{ ...styleTextProgress }}>React JS/TS</Typography> */}
+                                <img src={nextjsPng} style={styleLogoPng} />
                                 <AnimatedLinearProgress progress={90} />
                             </Grid>
                             <Grid sx={{ ...styleGridIcon }}>
